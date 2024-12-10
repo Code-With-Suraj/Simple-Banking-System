@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Ledger</title>
+    <link rel="stylesheet" href="ledger.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>🏦 Customer Ledger</h1>
+        </header>
+        <main>
+            <section id="ledger">
+                <h2 id="customer-name"></h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Transaction Type</th>
+                            <th>Amount</th>
+                            <th>Running Balance</th>
+                        </tr>
+                    </thead>
+                    <tbody id="ledger-rows">
+                        <!-- Rows will be dynamically added here -->
+                    </tbody>
+                </table>
+                <a href="index.html" class="back-link">← Back to Dashboard</a>
+            </section>
+        </main>
+    </div>
+    <script src="ledger.js"></script>
+</body>
+
+</html>

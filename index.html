@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>🏦 Simple Banking System</h1>
+            <h2 id="total-balance">Total Balance: ₹0.00</h2>
+        </header>
+        <main>
+            <section id="customer-list-container">
+                <h3>Customer List</h3>
+                <div id="customer-list"></div>
+            </section>
+
+            <section id="actions">
+                <h2>Manage Account</h2>
+                <form id="open-account-form">
+                    <h3>Open Account</h3>
+                    <input type="text" id="customer-name" placeholder="Customer Name" required />
+                    <input type="number" id="initial-balance" placeholder="Initial Balance" min="0" required />
+                    <button type="submit">Open Account</button>
+                </form>
+                <div id="transaction-section">
+                    <h3>Transaction</h3>
+                    <input type="text" id="customer-search" placeholder="Search Customer" />
+                    <div id="search-results"></div>
+                    <form id="transaction-form">
+                        <select id="transaction-type" required>
+                            <option value="deposit">Deposit</option>
+                            <option value="withdraw">Withdraw</option>
+                        </select>
+                        <input type="number" id="transaction-amount" placeholder="Amount" min="1" required />
+                        <button type="submit">Execute</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
